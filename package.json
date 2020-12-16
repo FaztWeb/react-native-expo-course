@@ -5,10 +5,15 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "deploy": "gh-pages -d web-build",
+    "predeploy": "expo build:web --no-pwa"
   },
   "dependencies": {
+    "anonymous-files": "^1.0.1",
     "expo": "~40.0.0",
+    "expo-image-picker": "~9.2.0",
+    "expo-sharing": "~8.5.0",
     "expo-status-bar": "~1.0.3",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -16,7 +21,8 @@
     "react-native-web": "~0.13.12"
   },
   "devDependencies": {
-    "@babel/core": "~7.9.0"
+    "@babel/core": "~7.9.0",
+    "gh-pages": "^3.1.0"
   },
   "private": true
 }
